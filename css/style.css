@@ -2345,4 +2345,14 @@ h6 {
         /* Full width buttons */
         justify-content: center;
     }
+
+    /* Fix gap between Home and About on mobile */
+    #home {
+        padding-top: 8rem !important;
+        padding-bottom: 4rem !important;
+        align-items: flex-start !important;
+        height: auto !important;
+        /* Ensure content flows naturally */
+        min-height: auto !important;
+    }
 }
