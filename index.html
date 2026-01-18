@@ -1,538 +1,896 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Suhail</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KJSC92RW3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0KJSC92RW3');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P2WH275X');</script>
+    <!-- End Google Tag Manager -->
 
-	<meta content="suhail,suhaill,mohammed suhail,mohammed suhail k,suhailk,suhaill.com,web developer,web designer,software developer,Front-end Developer" name="keywords">
-    <meta content="I'm Suhail, a Web Developer. I share Web Development tips and tricks based on today's trends." name="description">
-	<meta property="og:title" content="Suhail" />
-	<meta property="og:description" content="Personal Site" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mohammed Suhail - Senior Software Engineer Portfolio. Expert in Java Spring Boot, Laravel, and building scalable web applications.">
+    <meta name="keywords"
+        content="Mohammed Suhail, Software Engineer, Java Developer, Spring Boot, Laravel, Full Stack Developer, Dubai, Portfolio, Web Development">
+    <meta name="author" content="Mohammed Suhail">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://suhaill.com/">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="icon" href="images/ico.png">
+    <title>Mohammed Suhail | Senior Software Engineer</title>
+    <link rel="icon" type="image/png" href="images/ico.png">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KJSC92RW3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-0KJSC92RW3');
-	</script>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-P2WH275X');</script>
-	<!-- End Google Tag Manager -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suhaill.com/">
+    <meta property="og:title" content="Mohammed Suhail | Senior Software Engineer">
+    <meta property="og:description"
+        content="Senior Software Engineer with 6+ years of expertise in Java Spring Boot and PHP Laravel. Building scalable, high-performance web solutions.">
+    <meta property="og:image" content="images/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://suhaill.com/">
+    <meta property="twitter:title" content="Mohammed Suhail | Senior Software Engineer">
+    <meta property="twitter:description"
+        content="Senior Software Engineer with 6+ years of expertise in Java Spring Boot and PHP Laravel. Building scalable, high-performance web solutions.">
+    <meta property="twitter:image" content="images/profile.jpeg">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Plus Jakarta Sans (Modern, Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Suhail</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
-	<!-- particles -->
-	<div id="particles-js"></div>
+    <!-- Navigation (Floating Island) -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container nav-container bg-glass-nav rounded-pill px-4 py-2 mt-3 shadow-lg border border-white-10">
+            <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="#">
+                <div class="logo-box me-2">
+                    <span class="logo-initial">S</span>
+                </div>
+                <span class="tracking-wide text-white logo-text">SUHAIL</span>
+            </a>
 
-	<section class="hero-wrap js-fullheight" id="home-section">
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
-						<h1>Suhail</h1>
-						<h2>I like
-							<span class="txt-rotate" data-period="2000"
-								data-rotate='[ "Coding.", "Software Development", "Problem Solving."]'></span>
-						</h2>
-					</div>
-				</div>
-			</div>
-			<div class="scrollDown">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-		<div class="glyphicon glyphicon-arrow-down"></div>
-	</section>
+            <button class="navbar-toggler border-0 p-0 shadow-none z-index-50" type="button" id="mobile-menu-btn"
+                aria-expanded="false">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
 
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/profile.jpeg);" alt="Profile Image of Suhail">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4">About Me</h2>
-							<p>I thrive on exploring and mastering new tools and technologies to drive innovative solutions.</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span><span>Mohammed Suhail</span></li>
-								<li class="d-flex"><span>Profile:</span> <span>Software Developer</span></li>
-								<li class="d-flex"><span>Email:</span><span style="font-size: 14px"><a href="mailto:suhail3k@gmail.com" style="color: white;">suhail3k@gmail.com</a></span></li>
-								<li class="d-flex"><span>Phone:</span><span><a href="tel:+971567440267" style="color: white;">(+971) 567 440 267</a></span></li>
-								<li class="d-flex"><span>City:</span><span>Dubai</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p><a href="resume/Mohammed-Suhail-Resume.pdf" target="_blank" class="btn btn-primary py-3 px-3" download>Download CV</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#about">About</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#skills">Stack</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link px-3 py-2 rounded-pill" href="#terminal">Terminal</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link btn btn-primary text-white px-4 rounded-pill hover-scale"
+                            href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-3">Skills</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-1">Education</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-9">
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						<!-- Skill Section -->
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/html.png" title="HTML"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/css.png" title="CSS"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/javascript.png"	title="JavaScript"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/react.png" title="React"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/bootstrap.png" title="Bootstrap"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/jquery.png" title="Jquery"></div>
-						</div>
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/php.png" title="Php"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/mysql.png" title="MySQL"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/laravel.png" title="Laravel"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/git.png" title="Git"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/java.png" title="Java"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/photoshop.png" title="Photoshop"></div>
-						</div>
-					</div>
-					<div id="page-2" class="page two">
-						<h2 class="heading">Experience</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Software Engineer</h2>
-								<span class="position">Creative City Free Zone Authority (Government Authority) - Fujairah, UAE</span>
-								<p class="date">April 2023 to Present</p>
-								<ul>
-									<li>Developed and deployed robust ERP and CRM systems utilizing Java Spring Boot and PHP Laravel.</li>
-									<li>Developed and maintained both frontend and backend components, ensuring seamless user experiences and robust server-side performance.</li>
-									<li>Managed server infrastructure, including deployment, monitoring, and optimization of cloud services.</li>
-									<li>Successfully integrated payment systems and developed data integration solutions for the Ministry of Economy - UAE.</li>
-									<li>Learned and worked with platforms and technologies including API Management tools, Microservices, AWS, Jira and Docker.</li>
-									<li>Engaged with clients to gather requirements, provide technical expertise, and deliver tailored solutions that meet their business needs.</li>
-								</ul>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Software Developer</h2>
-								<span class="position">Zone Delivery Services - Dubai, UAE</span>
-								<p class="date">March 2021 to March 2023</p>
-								<ul>
-									<li>Worked with Java Spring Boot and PHP Laravel for development of ERP and CRM software.</li>
-									<li>Built REST APIs in Laravel and Spring Boot that served data to front-end to get the information.</li>
-									<li>Collaborated with a team of software engineers to refactor the code and reduce the service loading time.</li>
-									<li>Developed, tested, debugged and documented software applications.</li>
-									<li>Demonstrated the ability to quickly learn and apply new technologies.</li>
-								</ul>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Software Engineer</h2>
-								<span class="position">Quest Innovative Solutions (P) Ltd - Kerala, India</span>
-								<p class="date">July 2020 - January 2021</p>
-								<ul>
-									<li>Successfully written HTML, CSS and JavaScript.</li>
-									<li>Worked on back end with PHP, Java, MySQL and Laravel framework.</li>
-									<li>Implemented multiple projects based on Java and PHP.</li>
-									<li>Research for new ideas and implementing them on projects.</li>
-									<li>Worked closely with team members, meeting all tasks assigned by team lead.</li>
-									<li>Gained proficiency in OOPs concepts.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-graduation-cap"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Bachelor of Computer Application (BCA)</h2>
-								<span class="position">University of Calicut</span>
-								<p>Kerala - India</p>
-								<span class="date">2017-2020</span>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-book"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Higher Secondary (Plus Two)</h2>
-								<span class="position">Board of Kerala</span>
-								<p>Kerala - India</p>
-								<span class="date">2015-2017</span>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-book"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Secondary Education (SSLC)</h2>
-								<span class="position">Board of Kerala</span>
-								<p>Kerala - India</p>
-								<span class="date">2014-2015</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Mobile Full Screen Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100 gap-4">
+            <a href="#home" class="mobile-nav-link display-4 fw-bold">Home</a>
+            <a href="#about" class="mobile-nav-link display-4 fw-bold">About</a>
+            <a href="#experience" class="mobile-nav-link display-4 fw-bold">Experience</a>
+            <a href="#projects" class="mobile-nav-link display-4 fw-bold">Projects</a>
+            <a href="#skills" class="mobile-nav-link display-4 fw-bold">Stack</a>
+            <a href="#terminal" class="mobile-nav-link display-4 fw-bold">Terminal</a>
+            <a href="#contact" class="mobile-nav-link display-4 fw-bold text-primary">Contact</a>
+        </div>
+        <div class="mobile-menu-bg"></div>
+    </div>
 
-	<section class="ftco-section" id="project-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Projects</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://creativecity.gov.ae" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-camp"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">Creative City</h3>
-							<p><strong>PHP • Laravel</strong>  <i class="icon-external-link"></i></p>
-							<p>Creative City Free Zone Authority in Fujairah specializes in Media, Events, Consulting, Education, Communication and Marketing, Design and Technology complementing existing media clusters in the region and facilitating further creativity in these fields.</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://sys.ccfz.ae" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-book"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">CC Portal</h3>
-							<p><strong>Java • Spring Boot</strong>  <i class="icon-external-link"></i></p>
-							<p>A web based application that organizations use to manage license activities such as operation, visa applications, HR management, risk management and compliance, and other operations.</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://ridersouq.com" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-terminal"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">Rider Souq</h3>
-							<p><strong>Java • Spring Boot</strong>  <i class="icon-external-link"></i></p>
-							<p>A web based application that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and other operations.</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://zonemsp.com" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-camp"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">Zone MSP</h3>
-							<p><strong>PHP • Laravel</strong>  <i class="icon-external-link"></i></p>
-							<p>A web based application that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and other operations.</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://www.thepartyfinder.com" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-book"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">The Party Finder</h3>
-							<p><strong>PHP • Laravel</strong>  <i class="icon-external-link"></i></p>
-							<p>The Party Finder provides an unparalleled site and growing network, for businesses and contributors to get noticed and discovered online by millions of users.</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://fixmybrokenscreen.co.uk" target="_blank" class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-terminal"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-4">Fixmybrokenscreen</h3>
-							<p><strong>PHP • Laravel</strong>  <i class="icon-external-link"></i></p>
-							<p>Fixmybrokenscreen is platfrom for repair smartphones on online. Their goal is to repair and return customer device on the same day we receive it.</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Hero Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center position-relative pt-5 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-4 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Contact Me</h2>
-				</div>
-			</div>
+        <div class="container pt-5 position-relative z-1">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="mb-4">
+                        <h1 class="display-4 fw-bold mb-2">Mohammed Suhail</h1>
+                        <h2 class="fw-bold text-gradient typing-text h1">Senior Software Engineer</h2>
+                    </div>
+                    <p class="lead text-secondary mb-5 pe-lg-5">
+                        A dedicated professional with 6+ years of expertise in building robust
+                        web applications using <b>Java Spring Boot</b> and <b>PHP Laravel</b>.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-primary rounded-pill px-5 py-3 shadow-lg hover-scale">View My
+                            Work</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 mt-5 pt-4 border-top border-white-10">
+                        <a href="https://www.linkedin.com/in/mohammedsuhailk" target="_blank"
+                            class="text-secondary hover-text-primary transition"><i
+                                class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a href="https://github.com/suhail56" target="_blank"
+                            class="text-secondary hover-text-primary transition"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="mailto:suhail3k@gmail.com" class="text-secondary hover-text-primary transition"><i
+                                class="fa-solid fa-envelope fa-xl"></i></a>
+                    </div>
+                </div>
 
-			<div class="row d-flex justify-content-center contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel:+971567440267">(+971) 567 440 267</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:suhail3k@gmail.com">suhail3k@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Website</h3>
-							<p><a href="https://suhaill.com" target="_blank">suhaill.com</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <!-- Enhanced Hero Card -->
+                    <div class="hero-card-enhanced rounded-4 p-4 position-relative">
+                        <!-- Code Window Header -->
+                        <div class="code-header mb-3">
+                            <div class="window-controls">
+                                <div class="window-dot bg-danger"></div>
+                                <div class="window-dot bg-warning"></div>
+                                <div class="window-dot bg-success"></div>
+                            </div>
+                            <!-- Tabs -->
+                            <div class="ide-tab active">
+                                <i class="fa-brands fa-java text-primary"></i> main.java
+                            </div>
+                        </div>
 
-			<div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-					<form  action="" name="gform" id="submit-form"
-						class="bg-light p-4 p-md-5 contact-form">
-						<div class="form-group">
-							<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-						</div>
-						<div class="form-group">
-							<textarea id="message" cols="30" rows="7" class="form-control" name="message" placeholder="Message" required></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" id="submit-btn" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
-				</div>
+                        <!-- Code Preview -->
+                        <div class="code-preview font-monospace small text-primary-subtle opacity-75">
+                            <div class="mb-1"><span class="text-secondary">public class</span> <span
+                                    class="text-warning">Portfolio</span> <span class="text-white">{</span></div>
+                            <div class="ms-3 mb-1"><span class="text-secondary">private</span> String developer = <span
+                                    class="text-success">"Suhail"</span>;</div>
+                            <div class="ms-3 mb-1"><span class="text-secondary">private</span> int experience = <span
+                                    class="text-white">6</span>;</div>
+                            <div class="ms-3 mb-1"><span class="text-info">@Override</span></div>
+                            <div class="ms-3 mb-1"><span class="text-secondary">public void</span> <span
+                                    class="text-primary">buildSolution</span>() {</div>
+                            <div class="ms-5 mb-1">System.out.println(<span class="text-success">"Delivering
+                                    Excellence..."</span>);</div>
+                            <div class="ms-3 mb-1">}</div>
+                            <div class="mb-1">}</div>
+                        </div>
 
-				<div class="col-md-6 d-flex">
-					<div class="img" style="background-image: url(images/profile.jpeg);" alt="Profile Image of Suhail"></div>
-				</div>
-			</div>
-		</div>
-	</section>
+                        <div class="stats-row mt-4 pt-4 border-top border-white-10 d-flex justify-content-between">
+                            <div class="text-center">
+                                <h4 class="fw-bold text-white mb-0">6+</h4>
+                                <small class="text-secondary" style="font-size: 0.75rem;">YEARS EXP</small>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bold text-white mb-0">20+</h4>
+                                <small class="text-secondary" style="font-size: 0.75rem;">PROJECTS</small>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bold text-white mb-0">100%</h4>
+                                <small class="text-secondary" style="font-size: 0.75rem;">SUCCESS</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>I like working with new tools and technologies</p>
-						<p class="mt-4"><u>Social Links</u></p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="https://github.com/suhail56" target="_blank"><span class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/mohammedsuhailk" target="_blank"><span class="icon-linkedin-square"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100004277324613" target="_blank"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/suhail_kottayil" target="_blank"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-							<li><a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div>
+    </section>
 
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Question?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><a href="tel:+971567440267"><span class="icon icon-phone"></span><span class="text">(+971) 567 440 267</span></a></li>
-								<li><a href="mailto:suhail3k@gmail.com"><span class="icon icon-envelope"></span><span class="text">suhail3k@gmail.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<i class="icon-heart color-danger" aria-hidden="true"></i>
-					<i class="icon-heart color-danger" aria-hidden="true"></i>
-					<p class="mt-5">Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script>
-						All rights reserved | Suhail
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <!-- About Section (Relocated) -->
+    <section id="about" class="py-5 position-relative bg-navy-light">
+        <div class="container py-5">
+            <div class="about-profile-wrapper" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <!-- Left Column: Photo -->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="profile-img-frame">
+                            <!-- Placeholder for user's photo -->
+                            <img src="images/profile.jpeg" alt="Mohammed Suhail" class="profile-img" loading="lazy">
+                        </div>
+                    </div>
 
-	<!-- Modal -->
-	<div class="modal" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" style="color: black;">Form submitted</h5>
-			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
-			<div class="modal-body">
-			  <p style="color: black;">Form submitted successfully.</p>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
+                    <!-- Right Column: Info -->
+                    <div class="col-lg-8 ps-lg-5">
+                        <span class="section-label">Discover</span>
+                        <h2 class="section-title mb-4">About Me</h2>
+                        <p class="about-subtitle">
+                            Passionate about leveraging emerging technologies to architect high-performance, scalable
+                            software solutions.
+                        </p>
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen">
-		<svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-		</svg>
-	</div>
+                        <div class="profile-info-grid">
+                            <div class="profile-info-item">
+                                <span class="info-label"><i class="fa-solid fa-user"></i> Name</span>
+                                <div class="info-value">Mohammed Suhail</div>
+                            </div>
+                            <div class="profile-info-item">
+                                <span class="info-label"><i class="fa-solid fa-briefcase"></i> Profile</span>
+                                <div class="info-value">Software Developer</div>
+                            </div>
+                            <div class="profile-info-item">
+                                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                                <div class="info-value">
+                                    <a href="mailto:suhail3k@gmail.com">suhail3k@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="profile-info-item">
+                                <span class="info-label"><i class="fa-solid fa-phone"></i> Phone</span>
+                                <div class="info-value">
+                                    <a href="tel:+971567440267">(+971) 567 440 267</a>
+                                </div>
+                            </div>
+                            <div class="profile-info-item">
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> City</span>
+                                <div class="info-value">Dubai</div>
+                            </div>
+                        </div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/main.js"></script>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2WH275X"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+                        <!-- CTA Buttons -->
+                        <div class="mt-5 d-flex gap-3 cta-group-mobile">
+                            <a href="mailto:suhail3k@gmail.com"
+                                class="btn btn-primary rounded-pill px-4 py-2 shadow-lg">
+                                <i class="fa-solid fa-paper-plane me-2"></i> Contact Me
+                            </a>
+                            <a href="resume/Mohammed-Suhail-Resume.pdf"
+                                class="btn btn-outline-light rounded-pill px-4 py-2"
+                                download="Mohammed-Suhail-Resume.pdf" target="_blank">
+                                <i class="fa-solid fa-download me-2"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Moved up as requested priority) -->
+    <section id="experience" class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <span class="section-label">Career Journey</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My professional path in engineering robust solutions.</p>
+                </div>
+            </div>
+
+            <div class="card-stack-container">
+                <!-- Job 1 -->
+                <div class="card-stack-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stack-index">01</div>
+                    <div class="position-relative z-1">
+                        <div class="stack-header">
+                            <div>
+                                <h3 class="stack-role">Senior Software Developer</h3>
+                                <h4 class="stack-company">Creative City Free Zone Government Authority</h4>
+                                <div class="text-secondary small mb-2"><i
+                                        class="fas fa-map-marker-alt me-2"></i>Fujairah,
+                                    UAE</div>
+                            </div>
+                            <span class="stack-period">Apr 2023 - Present</span>
+                        </div>
+                        <ul class="stack-details list-unstyled mb-4">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Developed and deployed
+                                robust <b>ERP & CRM systems</b> utilizing <b>Java Spring Boot</b> and <b>PHP
+                                    Laravel</b>.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Orchestrated server
+                                infrastructure management, including deployment, monitoring, and optimization of cloud
+                                services (AWS).</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Successfully
+                                integrated payment systems and engineered secure data integration solutions for the
+                                <b>Ministry of Economy - UAE</b>.
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>mastered advanced
+                                platforms including API Management, Microservices, and Docker.</li>
+                        </ul>
+                        <div class="stack-tech-row">
+                            <span class="stack-tech-badge">Java Spring Boot</span>
+                            <span class="stack-tech-badge">PHP Laravel</span>
+                            <span class="stack-tech-badge">AWS</span>
+                            <span class="stack-tech-badge">Microservices</span>
+                            <span class="stack-tech-badge">Docker</span>
+                            <span class="stack-tech-badge">Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="card-stack-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stack-index">02</div>
+                    <div class="position-relative z-1">
+                        <div class="stack-header">
+                            <div>
+                                <h3 class="stack-role">Software Developer</h3>
+                                <h4 class="stack-company">Zone Delivery Services LLC</h4>
+                                <div class="text-secondary small mb-2"><i class="fas fa-map-marker-alt me-2"></i>Dubai,
+                                    UAE</div>
+                            </div>
+                            <span class="stack-period">Mar 2021 - Mar 2023</span>
+                        </div>
+                        <ul class="stack-details list-unstyled mb-4">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Engineered core
+                                modules for ERP & CRM software using <b>Java Spring Boot</b> and <b>PHP Laravel</b>.
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Architected
+                                high-performance <b>REST APIs</b> that served real-time data to frontend interfaces with
+                                minimal latency.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Collaborated with the
+                                engineering team to refactor legacy code, significantly reducing service loading times.
+                            </li>
+                        </ul>
+                        <div class="stack-tech-row">
+                            <span class="stack-tech-badge">Laravel API</span>
+                            <span class="stack-tech-badge">Spring Boot</span>
+                            <span class="stack-tech-badge">MySQL</span>
+                            <span class="stack-tech-badge">REST Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="card-stack-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stack-index">03</div>
+                    <div class="position-relative z-1">
+                        <div class="stack-header">
+                            <div>
+                                <h3 class="stack-role">Software Engineer</h3>
+                                <h4 class="stack-company">Quest Innovative Solutions (P) Ltd</h4>
+                                <div class="text-secondary small mb-2"><i class="fas fa-map-marker-alt me-2"></i>Kerala,
+                                    India</div>
+                            </div>
+                            <span class="stack-period">Jul 2020 - Jan 2021</span>
+                        </div>
+                        <ul class="stack-details list-unstyled mb-4">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Delivered full-stack
+                                solutions using <b>HTML, CSS, JavaScript</b>, and backend technologies (PHP, Java,
+                                MySQL).</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Implemented multiple
+                                client projects based on Java and PHP frameworks from concept to deployment.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Conducted R&D for new
+                                technical implementations and feature sets.</li>
+                        </ul>
+                        <div class="stack-tech-row">
+                            <span class="stack-tech-badge">PHP</span>
+                            <span class="stack-tech-badge">Java</span>
+                            <span class="stack-tech-badge">MySQL</span>
+                            <span class="stack-tech-badge">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (New) -->
+    <!-- Projects Section (New Advanced Gallery) -->
+    <section id="projects" class="py-5 bg-navy-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Selected Works</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing technical excellence and problem-solving capabilities.</p>
+
+                <!-- Filter Bar -->
+                <div class="project-filters mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="backend">Backend System</button>
+                    <button class="filter-btn" data-filter="webapp">Web Apps</button>
+                </div>
+            </div>
+
+            <div class="row g-4 project-container">
+                <!-- Project 1: Creative City -->
+                <div class="col-lg-6 project-item" data-category="webapp" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-premium">
+                        <div class="project-thumb">
+                            <img src="images/photo-1486406146926-c627a92ad1ab.avif" alt="Creative City">
+                            <div class="project-overlay-actions">
+                                <a href="https://creativecity.gov.ae" class="project-action-btn" title="Live Demo"
+                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">Laravel</span>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">Creative City</h4>
+                            <p class="text-secondary small mb-3">Fujairah Free Zone Authority</p>
+                            <p class="text-secondary-light small mb-0">Official portal for Creative City Free Zone,
+                                facilitating Media, Events, and Technology clusters. Streamlined user access to services
+                                and information.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: CC Portal -->
+                <div class="col-lg-6 project-item" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-premium">
+                        <div class="project-thumb">
+                            <img src="images/photo-1454165804606-c3d57bc86b40.avif" alt="CC Portal">
+                            <div class="project-overlay-actions">
+                                <a href="https://sys.ccfz.ae" class="project-action-btn" title="Live Demo"
+                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">CC Portal</h4>
+                            <p class="text-secondary small mb-3">Enterprise Management</p>
+                            <p class="text-secondary-light small mb-0">Comprehensive organization management system for
+                                license activities, visa applications, HR operations, and compliance monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Rider Souq -->
+                <div class="col-lg-6 project-item" data-category="backend" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-premium">
+                        <div class="project-thumb">
+                            <img src="images/photo-1542744173-8e7e53415bb0.avif" alt="Rider Souq">
+                            <div class="project-overlay-actions">
+                                <a href="https://ridersouq.com" class="project-action-btn" title="Live Demo"
+                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">Rider Souq</h4>
+                            <p class="text-secondary small mb-3">Business Logic Platform</p>
+                            <p class="text-secondary-light small mb-0">Robust business activity management system
+                                handling accounting, procurement, project management, and operational risk compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Zone MSP -->
+                <div class="col-lg-6 project-item" data-category="webapp" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-premium">
+                        <div class="project-thumb">
+                            <img src="images/photo-1460925895917-afdab827c52f.avif" alt="Zone MSP">
+                            <div class="project-overlay-actions">
+                                <a href="https://zonemsp.com" class="project-action-btn" title="Live Demo"
+                                    target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">Laravel</span>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">Zone MSP</h4>
+                            <p class="text-secondary small mb-3">Service Provider System</p>
+                            <p class="text-secondary-light small mb-0">Integrated web application for managing
+                                day-to-day business operations including accounting, procurement, and risk management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Frameworks Section -->
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Technology Stack</span>
+                <h2 class="section-title">Tools & Frameworks</h2>
+                <p class="section-subtitle">A comprehensive arsenal of modern technologies.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Card 1: Backend -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card-premium">
+                        <div class="skill-card-inner">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <h4 class="category-title">Backend</h4>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-java"></i></span>
+                                    <span class="tech-name">Java</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-envira"></i></span>
+                                    <span class="tech-name">Spring Boot</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-php"></i></span>
+                                    <span class="tech-name">PHP</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-laravel"></i></span>
+                                    <span class="tech-name">Laravel</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-solid fa-bolt"></i></span>
+                                    <span class="tech-name">REST API</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-python"></i></span>
+                                    <span class="tech-name">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Frontend -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-premium">
+                        <div class="skill-card-inner">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <h4 class="category-title">Frontend</h4>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-react"></i></span>
+                                    <span class="tech-name">React.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-vuejs"></i></span>
+                                    <span class="tech-name">Vue.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-square-js"></i></span>
+                                    <span class="tech-name">JavaScript</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-html5"></i></span>
+                                    <span class="tech-name">HTML5/CSS</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-bootstrap"></i></span>
+                                    <span class="tech-name">Bootstrap</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-solid fa-layer-group"></i></span>
+                                    <span class="tech-name">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: DevOps & Tools -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-premium">
+                        <div class="skill-card-inner">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
+                                <h4 class="category-title">DevOps / Tools</h4>
+                            </div>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-aws"></i></span>
+                                    <span class="tech-name">AWS</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-docker"></i></span>
+                                    <span class="tech-name">Docker</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-solid fa-database"></i></span>
+                                    <span class="tech-name">PostgreSQL</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-solid fa-server"></i></span>
+                                    <span class="tech-name">Oracle</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-git-alt"></i></span>
+                                    <span class="tech-name">Git</span>
+                                </div>
+                                <div class="tech-item">
+                                    <span class="tech-icon"><i class="fa-brands fa-jira"></i></span>
+                                    <span class="tech-name">Jira</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Infinite Marquee -->
+            <div class="marquee-wrapper py-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="marquee-content">
+                    <!-- Set 1 -->
+                    <span class="marquee-item"><i class="fa-brands fa-java"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-php"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-python"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-js"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-react"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-vuejs"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-laravel"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-docker"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-aws"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-github"></i></span>
+                    <!-- Set 2 (Duplicate) -->
+                    <span class="marquee-item"><i class="fa-brands fa-java"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-php"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-python"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-js"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-react"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-vuejs"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-laravel"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-docker"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-aws"></i></span>
+                    <span class="marquee-item"><i class="fa-brands fa-github"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section id="terminal" class="py-5 bg-navy-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Command Line Interface</span>
+                <h2 class="section-title">Developer Terminal</h2>
+                <p class="section-subtitle">Interact with the system. Type <span
+                        class="text-primary bg-navy-light px-2 py-1 rounded small border border-white-10">help</span> to
+                    begin.</p>
+            </div>
+
+            <div class="row justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="terminal-title">
+                                <i class="fa-solid fa-terminal me-2"></i>visitor@suhail-portfolio: ~
+                            </div>
+                            <div class="terminal-actions">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body"
+                            onclick="document.getElementById('terminal-input').focus()">
+                            <div id="terminal-output">
+                                <div class="terminal-welcome mb-4">
+                                    <span class="text-secondary"># Welcome to the interactive portfolio
+                                        shell v2.0.0</span><br>
+                                    <span class="text-secondary"># Type <span class="text-warning">'help'</span> to see
+                                        available
+                                        commands.</span><br>
+                                    <span class="text-secondary"># Try <span class="text-info">'whoami'</span>, <span
+                                            class="text-success">'skills'</span>, or <span
+                                            class="text-primary">'contact'</span>.</span>
+                                </div>
+                            </div>
+                            <div class="terminal-input-line">
+                                <span class="prompt-user">visitor@suhail-portfolio</span>:<span
+                                    class="prompt-path">~</span>$
+                                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off"
+                                    spellcheck="false">
+                                <span class="blinking-cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-darker position-relative overflow-hidden">
+        <!-- Background Glow -->
+        <div class="position-absolute top-50 start-50 translate-middle"
+            style="width: 600px; height: 600px; background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%); filter: blur(60px); opacity: 0.4; pointer-events: none;">
+        </div>
+
+        <div class="container py-5 position-relative z-1">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="display-5 fw-bold mb-3 section-title text-white">Let's Connect</h2>
+                    <p class="lead text-secondary">
+                        Currently available for freelance projects and open to full-time opportunities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10" data-aos="fade-up">
+                    <div class="contact-card-lux">
+                        <!-- Left Panel: Info -->
+                        <div class="contact-info-lux">
+                            <h3 class="text-white fw-bold mb-5">Contact Details</h3>
+
+                            <div class="lux-item">
+                                <span class="lux-label">Email Address</span>
+                                <a href="mailto:suhail3k@gmail.com" class="lux-value">suhail3k@gmail.com</a>
+                            </div>
+
+                            <div class="lux-item">
+                                <span class="lux-label">Phone Number</span>
+                                <a href="tel:+971567440267" class="lux-value">+971 56 744 0267</a>
+                            </div>
+
+                            <div class="lux-item">
+                                <span class="lux-label">Base Location</span>
+                                <span class="lux-value">Dubai, UAE</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Panel: Form -->
+                        <div class="contact-form-lux">
+                            <h3 class="text-white fw-bold mb-4">Send Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group-lux">
+                                            <input type="text" class="input-lux" id="name" name="name"
+                                                placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-lux">
+                                            <input type="email" class="input-lux" id="email" placeholder="Your Email"
+                                                name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group-lux">
+                                            <input type="text" class="input-lux" id="subject" name="subject"
+                                                placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group-lux">
+                                            <textarea class="input-lux" id="message" name="message"
+                                                placeholder="Write your message here..."
+                                                style="min-height: 120px; resize: none;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button type="submit" class="btn-lux">
+                                            <span>Send Now</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lux Footer -->
+    <footer class="footer-lux">
+        <div class="container">
+            <!-- Brand -->
+            <a href="#" class="footer-brand text-decoration-none">
+                SUHAIL
+            </a>
+            <p class="footer-desc">
+                Senior Software Engineer building scalable, high-performance web solutions. Based in Dubai, available
+                globally.
+            </p>
+
+            <!-- Socials -->
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mohammedsuhailk" class="footer-social-btn" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/suhail56" class="footer-social-btn" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/suhail_kottayil" class="footer-social-btn" target="_blank"
+                    aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="mailto:suhail3k@gmail.com" class="footer-social-btn" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p class="mb-0">&copy;
+                    <script>document.write(new Date().getFullYear());</script> Suhail. All rights reserved.
+                </p>
+                <p class="mb-0">Designed & Built with <i class="fa-solid fa-heart text-danger heart-animate mx-1"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Success Modal (Hidden by default) -->
+    <div id="successModal" class="success-modal-overlay">
+        <div class="success-modal-card">
+            <div class="success-icon-wrapper">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="success-title">Message Sent!</h3>
+            <p class="success-message">Thanks for reaching out. I'll get back to you shortly.</p>
+            <button class="btn-lux-sm" id="closeModalBtn">Awesome</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- Custom Script -->
+    <script src="js/script.js" defer></script>
 </body>
-<script>
-	$('.navbar-nav>li>a').on('click', function(){
-		$('.navbar-collapse').collapse('hide');
-	});
-</script>
-<script>
-	$("#submit-form").submit((e)=>{
-		e.preventDefault();
-		$("#submit-btn").val("Please wait...").prop("disabled", true);
-		$.ajax({
-			url:"https://script.google.com/macros/s/AKfycbyr5xiM3JxX9sVXhFe9jdYkUqfZung0Sutd3vnJyzL7npl2f_txUaCuJIJ40UTzBP4B1g/exec",
-			data:$("#submit-form").serialize(),
-			method:"post",
-			success:function (response){
-				$('#myModal').modal('show');
-				$('#name').val('');
-				$('#email').val('');
-				$('#subject').val('');
-				$('#message').val('');
-				$("#submit-btn").val("Submit").prop("disabled", false);
-			},
-			error:function (err){
-				alert("Something Error");
-				$("#submit-btn").val("Submit").prop("disabled", false);
-			}
-		});
-	});
-</script>
+
 </html>

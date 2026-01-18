@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://suhaill.com/sitemap.xml
