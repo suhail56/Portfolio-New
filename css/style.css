@@ -1195,12 +1195,27 @@ h6 {
 @media (max-width: 576px) {
     .project-filters {
         width: 100%;
-        border-radius: 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: nowrap;
+        /* Single row */
+        gap: 4px;
+        /* Tiny gap */
+        padding: 4px;
+        justify-content: space-between;
     }
 
     .filter-btn {
-        padding: 8px 16px;
-        font-size: 0.85rem;
+        flex: 1;
+        /* Equal width */
+        padding: 10px 0;
+        /* Vertical padding only */
+        font-size: 0.75rem;
+        border-radius: 8px;
+        /* Tighter radius for inside items */
+        text-align: center;
+        width: auto;
+        /* reset */
     }
 
 }
