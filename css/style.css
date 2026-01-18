@@ -1195,7 +1195,7 @@ h6 {
 @media (max-width: 576px) {
     .project-filters {
         width: 100%;
-        border-radius: 12px;
+        border-radius: 50px;
         display: flex;
         flex-wrap: nowrap;
         /* Single row */
@@ -1211,7 +1211,7 @@ h6 {
         padding: 10px 0;
         /* Vertical padding only */
         font-size: 0.75rem;
-        border-radius: 8px;
+        border-radius: 50px;
         /* Tighter radius for inside items */
         text-align: center;
         width: auto;
